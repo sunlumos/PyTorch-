@@ -34,3 +34,6 @@ for epoch in range(100):
     print("epoch:", epoch, "w = ", w, "loss=", l)
 
 print('Predict(after training)', 4, forward(4))
+
+# 普通梯度下降性能低但时间低  随机梯度下降性能高但时间花费高
+# 因此在正式算法中一般使用batch 小批量的随机梯度下降
